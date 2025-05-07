@@ -1,6 +1,8 @@
 import 'package:e_commerce/screen/auth/login_auth_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../page/home_page_screen.dart';
+
 class RegisterAuthScreen extends StatelessWidget {
   const RegisterAuthScreen({super.key});
 
@@ -70,7 +72,9 @@ class RegisterAuthScreen extends StatelessWidget {
                     width: double.infinity,
                     height: 50,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => HomePageScreen()));
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.black,
                         shape: RoundedRectangleBorder(

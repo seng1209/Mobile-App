@@ -35,9 +35,10 @@ class Intro4IntroScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 24,),
                 Center(
-                  child: Image(
-                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVRvRNE9dTG6YUVvp9Tild2GjQJZwu9NeJg&s")
-                  ),
+                  // child: Image(
+                  //     image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVRvRNE9dTG6YUVvp9Tild2GjQJZwu9NeJg&s")
+                  // ),
+                  child: Image.asset("assets/images/intro/intro4.png"),
                 ),
                 SizedBox(height: 24,),
               ],

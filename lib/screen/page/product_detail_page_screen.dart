@@ -37,12 +37,12 @@ class ProductDetailPageScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    "${product['product_name']}",
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                    softWrap: true,
-                    overflow: TextOverflow.visible,
-                    maxLines: null,
+                  Flexible(
+                    child: Text(
+                      "${product['product_name']}",
+                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      overflow: TextOverflow.visible,
+                    ),
                   ),
                   Text("\$${product['price']}", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)
                 ],

@@ -35,9 +35,10 @@ class Intro2IntroScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 24,),
                 Center(
-                  child: Image(
-                      image: NetworkImage("https://westmountflorist.com/cdn/shop/articles/wf-flower-reference-guide-anemone.jpg?v=1725909662&width=2048")
-                  ),
+                  // child: Image(
+                  //     image: NetworkImage("https://westmountflorist.com/cdn/shop/articles/wf-flower-reference-guide-anemone.jpg?v=1725909662&width=2048")
+                  // ),
+                  child: Image.asset("assets/images/intro/intro2.jpg"),
                 ),
                 SizedBox(height: 24,),
               ],

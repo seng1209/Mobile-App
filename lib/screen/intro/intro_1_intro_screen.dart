@@ -24,9 +24,10 @@ class Intro1IntroScreen extends StatelessWidget {
               children: [
                 SizedBox(height: 24,),
                 Center(
-                  child: Image(
-                      image: NetworkImage("https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt5f18c2119ce26485/6668df65db90945e0caf9be6/beautiful-flowers-lotus.jpg?q=70&width=3840&auto=webp")
-                  ),
+                  child: Image.asset("assets/images/intro/intro1.jpg"),
+                  // child: Image(
+                  //     image: NetworkImage("https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt5f18c2119ce26485/6668df65db90945e0caf9be6/beautiful-flowers-lotus.jpg?q=70&width=3840&auto=webp")
+                  // ),
                 ),
                 SizedBox(height: 24,),
                 Center(

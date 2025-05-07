@@ -24,9 +24,10 @@ class Intro5IntroScreen extends StatelessWidget {
               children: [
                 SizedBox(height: 24,),
                 Center(
-                  child: Image(
-                      image: NetworkImage("https://www.mahagro.com/cdn/shop/articles/Zinnia_July_2010-1.jpg?v=1551866543&width=1100")
-                  ),
+                  // child: Image(
+                  //     image: NetworkImage("https://www.mahagro.com/cdn/shop/articles/Zinnia_July_2010-1.jpg?v=1551866543&width=1100")
+                  // ),
+                  child: Image.asset("assets/images/intro/intro5.jpg"),
                 ),
                 SizedBox(height: 24,),
                 Center(

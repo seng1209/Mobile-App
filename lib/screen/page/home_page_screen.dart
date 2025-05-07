@@ -313,7 +313,9 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                   width: 150,
                                 ),
                                 SizedBox(height: 10),
-                                Text("${product["product_name"]}"),
+                                Flexible(
+                                    child: Text("${product["product_name"]}", overflow: TextOverflow.ellipsis,)
+                                ),
                                 SizedBox(height: 10),
                                 Text("\$${product["price"]}"),
                               ],
@@ -385,12 +387,10 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                     height: 150,
                                     width: 150
                                 ),
-                                // Image(
-                                //   image: NetworkImage("${product["image"]}"),
-                                //   fit: BoxFit.cover,
-                                // ),
                                 SizedBox(height: 10),
-                                Text("${product["product_name"]}"),
+                                Flexible(
+                                    child: Text("${product["product_name"]}", overflow: TextOverflow.ellipsis,)
+                                ),
                                 SizedBox(height: 10),
                                 Text("\$${product["price"]}"),
                               ],

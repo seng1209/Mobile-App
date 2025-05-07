@@ -39,6 +39,7 @@ class _ScreenState extends State<Screen> {
             selectedIndex = index;
           });
         },
+        currentIndex: selectedIndex,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
@@ -51,10 +52,3 @@ class _ScreenState extends State<Screen> {
     );
   }
 }
-
-// void selectItems(BuildContext context, int index){
-//   switch(index){
-//     case 0:
-//       Navigator.of(context).push(MaterialPageRoute(builder: (context) => ))
-//   }
-// }

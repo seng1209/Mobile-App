@@ -26,9 +26,10 @@ class Intro3IntroScreen extends StatelessWidget {
               children: [
                 SizedBox(height: 24,),
                 Center(
-                  child: Image(
-                      image: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/960px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg")
-                  ),
+                  // child: Image(
+                  //     image: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/960px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg")
+                  // ),
+                  child: Image.asset("assets/images/intro/intro3.png"),
                 ),
                 SizedBox(height: 24,),
                 Center(
