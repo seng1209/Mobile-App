@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 import '../auth/login_auth_screen.dart';
+import 'package:e_commerce/components/global_variable.dart' as basedApi;
 
 class UserPageScreen extends StatefulWidget {
   UserPageScreen({super.key});
@@ -14,9 +15,7 @@ class UserPageScreen extends StatefulWidget {
 }
 
 class _UserPageScreenState extends State<UserPageScreen> {
-  final basedUrl = "http://localhost:8000/api/v1";
-  
-  
+
   @override
   void initState() {
     // TODO: implement initState
@@ -27,7 +26,7 @@ class _UserPageScreenState extends State<UserPageScreen> {
   Future<void> _fetchUser() async {
     try
         {
-          final response = await http.get(Uri.parse("$basedUrl/users/bunthav11"));
+          final response = await http.get(Uri.parse(basedApi.BASE_ENDPOINT + "/users/bunthav11"));
           if(response.statusCode == 200){
             final body = jsonDecode(response.body);
             print(body);
